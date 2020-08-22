@@ -50,15 +50,15 @@
     #set( $pempty = $empty.substring(0, $pfelen) )
     #set( $fname = "$fname$pempty")
 #end
-#set ( $uname = $USER_NAME )
+#set ( $uname = $USER )
 #set ( $uname_length = $uname.length() )
 #if ( $uname_length > 8 )
     #set ( $uname = $uname.substring(0, 8) )
     #set ( $uname_length = 8 )
 #end
 #set ( $uemail = "marvin@42.fr" )
-#if ( $USER_MAIL && $USER_MAIL != "" )
-    #set ( $uemail = $USER_MAIL )
+#if ( $MAIL && $MAIL != "" )
+    #set ( $uemail = $MAIL )
 #end
 #set ( $uemail_length = $uemail.length() )
 #set ( $l6_length = $uname_length + $uemail_length + 3)
